@@ -79,11 +79,10 @@ hr{
 .bottom-cloud{
   position: absolute;
   left: 300px;
-  bottom: 360px
+  bottom: 300px
 }
 .land{
   position: relative;
-  height: 480px;
 }
 
 
