@@ -5,7 +5,56 @@ body{
   color: #50505a;
 }
 
+h1{
+  font-size: 4rem;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'Merriweather', serif;
+}
 
+h2{
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  font-size: 2rem;
+  padding-bottom: 4px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+h3{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 16px auto 16px auto;
+  color: #000000;
+}
+
+
+
+hr{
+  border: dotted #e1f1ff 6px;
+  border-bottom: none;
+  width: 8%;
+  margin: 20px auto;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+.section {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: calc(50px + 3vw);
+}
+
+.wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
 
 #header {
   width:100vw;
@@ -134,51 +183,6 @@ body{
   #header .facebook { display:none; }
 }
 
-
-
-
-h1{
-  font-size: 4rem;
-  color: #000000;
-  margin-top: 40px;
-  margin-bottom: 0;
-  padding-left: 80px;
-  padding-right: 80px;
-  font-family: 'Merriweather', serif;
-}
-
-h2{
-  font-family: 'Merriweather', serif;
-  color: #000000;
-  font-size: 2rem;
-  padding-bottom: 4px;
-  margin-top: 16px;
-  margin-bottom: 0;
-}
-
-h3{
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.6rem;
-  margin: 16px auto 16px auto;
-  color: #000000;
-}
-
-p{
-  line-height: 1.8;
-  font-size: 1.6rem;
-}
-
-hr{
-  border: dotted #e1f1ff 6px;
-  border-bottom: none;
-  width: 8%;
-  margin: 20px auto;
-}
-
-img {
-    display: inline-block;
-    max-width: 100%;
-}
 
 
 .hero-section{
@@ -420,3 +424,168 @@ img {
   .copyright{
     font-size: 0.75rem;
   }
+
+
+
+
+
+
+
+.section {
+	text-align: center;
+	margin:0 auto;
+	margin-bottom: calc(50px + 3vw);
+}
+
+
+h2 {
+	font-size:52px;
+	margin-bottom:20px;
+}
+
+h3 {
+	font-size:24px;
+	margin-bottom:40px;
+}
+
+h1 img {
+	width: 46px;
+    position: relative;
+    top: 2px;
+    right: -5px;
+}
+
+.wrap.palettes p {
+	margin: 0 auto;
+	font-size:18px;
+}
+
+.wrap.palettes p.big {
+	margin:0 auto;
+	font-size:24px;
+	margin-bottom:20px;
+}
+
+.button.special {
+	margin:16px auto 10px;
+	transition: all 1s;
+	font-size: 18px;
+	padding: 6px 22px;
+	background-color: #4652ff;
+	font-size: 18px;
+  padding: 4px 90px 4px 20px;
+	background-color: #4652ff;
+	position: relative;
+	box-sizing: border-box;
+	background: #36a9ae linear-gradient(to bottom, #37adb2, #329ca0);
+	border: 1px solid #2a8387;
+	border-width: 1px;
+	border-style: solid;
+	transition: all .2s;
+}
+
+.button.special .price {
+	background: #36a9ae linear-gradient(to bottom, #3ebec3, #3ba9ad);
+	border-left: 1px solid rgba(0,0,0,0.2);
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 4px 16px;
+	border-radius: 0 4px 4px 0;
+}
+
+.thumbnails {
+	margin-top:50px;
+	display:flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+
+.thumbnails .item {
+  width:365px;
+  margin:20px
+}
+
+.thumbnails img {
+	width:100%;
+}
+
+.thumbnails .item p {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.avatar {
+	width: 100px;
+	display:block;
+	margin:100px auto 20px;
+}
+
+#steps-grid {
+  display: flex;
+  margin-bottom:100px;
+}
+
+#steps-grid div {
+  max-width:350px;
+  text-align:center;
+}
+
+#steps-grid .arrow {
+  width:100px;
+  padding-top:100px;
+  font-size:26px;
+  color:#b7b7b7;
+}
+
+#steps-grid .arrow:after {
+  content: "⟶";
+}
+
+
+#steps-grid img {
+  width:200px;
+}
+
+#steps-grid p {
+  margin:0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  #steps-grid { display:block; }
+  #steps-grid div { margin:0 auto; }
+  #steps-grid .arrow { margin:0 auto; padding:20px 0; }
+  #steps-grid .arrow:after { content:"↓" }
+  h1 { font-size:30px; max-width: 340px; }
+  h2 { font-size: 26px; margin:0 0 20px;}
+  h1 img { width:20px; top:0px; right:-2px; }
+  .wrap.palettes p { font-size:16px; }
+  .wrap.palettes p.big { margin-bottom:10px; font-size:18px; }
+  p.big.first { max-width:260px; font-size:20px; }
+  .thumbnails { margin-top:30px; }
+  .content .text { padding:0 14px; }
+  .content .text p.big { font-size:16px; margin-top:-15px; }
+}
+
+@media screen and (max-width: 400px) {
+	body { padding:120px 12px; }
+	p.big { font-size:16px ; }
+  .thumbnails .item { width:100%; }
+  .thumbnails .item p { margin-top:10px; font-size:14px; }
+  .avatar { margin: 50px auto 20px; }
+  h2 { font-size:26px; }
+}
+
+p {
+    line-height: 150%;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
