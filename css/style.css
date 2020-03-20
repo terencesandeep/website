@@ -589,3 +589,55 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+
+.shadow {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.50);
+}
+
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.ba-slider img {
+    width: 100%;
+    display: block;
+}
+
+.resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.handle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -2px;
+    background: white;
+    cursor: ew-resize;
+}
+
+
+.handle:after {
+    position: absolute;
+    top: 50%;
+    right: -27px;
+    width: 56px;
+    height: 56px;
+    margin: -28px 0 0 -28px;
+    transition: all 0.2s;
+    content: ' ';
+    background-image: url("/Images/arrows.png");
+    background-size: 56px;
+    border-radius: 50%;
+}
